@@ -168,7 +168,7 @@ if __name__ == "__main__":
     for img_root, hint_root in zip(img_roots, hint_roots):
         i = i + 1
         print('Image: {}'.format(i))
-        result = 'Weizmann_1obj_results/{}/'.format(img_root.split('/')[-1][:-4])
+        result = './Weizmann_1obj_results/{}/'.format(img_root.split('/')[-1][:-4])
         os.system('mkdir -p ' + result)
         
         img = Image.open(img_root)
