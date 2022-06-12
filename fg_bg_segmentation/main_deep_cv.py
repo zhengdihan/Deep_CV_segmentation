@@ -27,7 +27,7 @@ class Id(nn.Module):
     
 class Hint(nn.Module):
     def __init__(self, hint):
-        super(Hintv1, self).__init__()
+        super(Hint, self).__init__()
         hint = (hint / 255).clip(0.01, 0.99)
         phi = (np.log(hint/(1-hint))).clip(-1,1)
         self.phi = nn.Parameter(torch.Tensor(phi))
