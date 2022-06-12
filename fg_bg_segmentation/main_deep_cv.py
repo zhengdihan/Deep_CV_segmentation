@@ -165,7 +165,7 @@ if __name__ == "__main__":
 
     i = 0
 
-    for img_root, hint_root in zip(img_roots[0:], hint_roots[0:]):
+    for img_root, hint_root in zip(img_roots, hint_roots):
         i = i + 1
         print('Image: {}'.format(i))
         result = 'Weizmann_1obj_results/{}/'.format(img_root.split('/')[-1][:-4])
